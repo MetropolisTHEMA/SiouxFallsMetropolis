@@ -14,7 +14,7 @@ VEHICLE_PCE = 1.0
 PERIOD = [5.0 * 3600, 10.0 * 3600.0]
 # Capacity per lane, used to compute the number of lanes on each edge (the total capacity of each
 # edge is given by the input files and fixed).
-CAPACITY_PER_LANE = 1500
+CAPACITY_PER_LANE = 2000
 # Edges' speed limit (set to 60 km/h so that free-flow travel time in minutes is equal to edge
 # length in kilometers, just like in the input data).
 SPEED_LIMIT = 60
@@ -174,4 +174,4 @@ with open(os.path.join(OUTPUT_DIR, "network.json"), "w") as f:
 with open(os.path.join(OUTPUT_DIR, "agents.json"), "w") as f:
     f.write(json.dumps(agents))
 with open(os.path.join(OUTPUT_DIR, "parameters.json"), "w") as f:
-    f.write(json.dumps(parameters))
+    f.write(json.dumps(PARAMETERS))
